@@ -1,0 +1,9 @@
+<h1>Here are all the cats.</h1>
+
+<ul>
+<% @cats.each do |cat|%>
+  <li> <%= cat.name.capitalize %> is <%=cat.age%> year old </li>
+  <a href="<%= cat_url(cat) %>">More Info About <%= cat.name %></a>
+  <% end %>
+</ul>
+
